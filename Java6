@@ -1,0 +1,25 @@
+public class Schaltjahre {
+  public static void main(String[] args) {
+    System.out.println("Schaltjahre");
+ 	System.out.println("\n");
+ 	
+ 	for( int i = 1999; i< 2010; i++) {
+ 	
+ 	System.out.print(i+ " =");
+ 	
+ 	if((i%4 == 0 & i%100 != 0) | (i%400 == 0)) {
+ 	 
+ 	 System.out.println("  " +"yes");
+ 	 
+ 	} 
+ 	else 
+ 	{
+ 	 System.out.println("  "+"no");
+ 	 
+ 	} 
+ 	
+ 	}
+  }
+
+
+}
