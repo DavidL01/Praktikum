@@ -1,0 +1,19 @@
+public class numbers {
+  public static void main(String[] args) {
+   
+  
+  	 // Variable i wird deklariert und initialisiert
+	// Abbruchbedingung wird festgelegt auf i < 9
+	// i wird nach jedem durchlauf um eins erhöht
+	for(int i=0; i < 9; i++)
+	{
+  	
+  	
+  	 // Die Ausgabe findet neunmal statt (von 0 bis 16)
+    	System.out.println("es sind jetzt " + 2*i);
+	System.out.println ("Sekunden,");
+	
+}
+
+   }
+  }
