@@ -1,0 +1,46 @@
+import java.util.Scanner; 
+
+public class Glücksspiel {
+  public static void main(String[] args) {
+    
+    for(;;) {
+    Scanner s = new Scanner(System.in);
+    
+    	System.out.println("Glücksspiel mit Zahlen!"+"\n");
+    	System.out.println("Gib eine Zahl von 1 bis 10 ein");
+    	
+    int eingabe = s.nextInt();
+    int zufallszahl;
+    
+    zufallszahl = (int)(Math.random() * 10+1); 
+    System.out.println(zufallszahl);   
+ 
+ 	if(eingabe>10){
+ 		System.out.println("Bitte eine Zahl von 1 bis 10 eingeben!"); }
+ 	
+ 	
+ 	if(eingabe==zufallszahl) {
+ 	  System.out.println("Du hast gewonnen!!!!!"+" "+ "und bekommst"+" "+zufallszahl+ "€ überwiesen"); }
+ 	  
+ 	else {
+ 	  System.out.println("Schade, verloren.."+"\n"); 
+ 	  System.out.println("Nochmal? [J oder N]"); }
+ 	  
+ 	String antwort = s.next().toUpperCase();
+ 	/*String Eingabe = s.next().toUpperCase();*/
+ 	System.out.println("\n");
+ 	if(antwort.equals("N")) {
+ 	
+ 	 System.out.println("Viel Glück beim nächsten Mal."); break;
+ 	 }
+ 	 
+ 	while (!antwort.startsWith("J") && !antwort.startsWith("N"))
+      {
+	 
+	 System.out.print("Ungültige Antwort! Bitte geben Sie entweder J oder N ein: ");
+	 antwort = s.next( ).toUpperCase( );
+      }
+ }
+ 
+  }
+}
